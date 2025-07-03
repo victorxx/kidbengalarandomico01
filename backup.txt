@@ -1,208 +1,33 @@
+
 <!DOCTYPE html>
-<html lang="pt-br"> <!-- Define que a linguagem da página é português do Brasil -->
+<html lang="pt-br">
 <head>
-  <!-- Configurações básicas do cabeçalho -->
-  <meta charset="UTF-8" /> <!-- Define o conjunto de caracteres como UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsividade em dispositivos móveis -->
-  <meta name="robots" content="index,follow" /> <!-- Permite que robôs de busca indexem a página -->
-
-  <!-- SEO -->
-  <title>Kid Bengala Vídeos - Assista os melhores vídeos</title> <!-- Título da página (aparece na aba do navegador) -->
-  <meta name="description" content="Assista vídeos do Kid Bengala. Selecione entre vários vídeos exclusivos e únicos." />
-  <meta name="keywords" content="Kid Bengala, vídeo, YouTube, filmes, vídeos adultos, entretenimento" />
-
-  <!-- Estilos CSS -->
-  <style>
-    body {
-      margin: 0;
-      background-color: #000; /* Fundo preto */
-      color: #fff; /* Cor do texto branco */
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh; /* Altura mínima da tela */
-      align-items: center; /* Alinha ao centro horizontal */
-      justify-content: center; /* Alinha ao centro vertical */
-      padding: 20px;
-      position: relative; /* Necessário para a propaganda fixa */
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #ff4500; /* Laranja avermelhado */
-      text-shadow: 1px 1px 3px black; /* Sombra para destaque */
-    }
-
-    #video-container {
-      width: 100%;
-      max-width: 800px;
-      aspect-ratio: 16 / 9; /* Mantém proporção de vídeo */
-      margin-bottom: 10px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-radius: 8px;
-      box-shadow: 0 0 15px #ff4500; /* Brilho ao redor do vídeo */
-    }
-
-    #video-title {
-      max-width: 800px;
-      text-align: center;
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      color: #ffcc00; /* Amarelo */
-      text-shadow: 1px 1px 2px black;
-      min-height: 2.5em; /* Garante altura mínima para evitar mudança de layout ao trocar o título */
-    }
-
-    button {
-      background-color: #ff4500;
-      border: none;
-      padding: 12px 25px;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 6px;
-      margin-bottom: 40px;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #e03e00; /* Cor mais escura ao passar o mouse */
-    }
-
-    #unique-string {
-      max-width: 90%;
-      background-color: #111; /* Quase preto */
-      border-radius: 8px;
-      padding: 15px;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 14px;
-      white-space: pre-wrap;
-      word-break: break-word;
-      color: #ccc;
-      user-select: text; /* Permite copiar o conteúdo */
-      margin-top: auto;
-    }
-
-    /* Estilo para propaganda que pisca no canto superior direito */
-    #propaganda-piscante {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background-color: #ff4500;
-      color: white;
-      font-weight: bold;
-      padding: 10px 15px;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      animation: piscar 1s infinite alternate; /* Animação de piscar */
-      box-shadow: 0 0 10px #ff4500;
-      z-index: 1000; /* Fica acima de tudo */
-      user-select: none;
-    }
-
-    /* Animação para a propaganda */
-    @keyframes piscar {
-      0% {opacity: 1;}
-      100% {opacity: 0.3;}
-    }
-
-    /* Ajustes para telas pequenas */
-    @media (max-width: 600px) {
-      #video-container {
-        max-width: 100%;
-        aspect-ratio: auto;
-        height: 215px;
-      }
-
-      #video-title {
-        font-size: 16px;
-      }
-
-      #propaganda-piscante {
-        font-size: 14px;
-        padding: 8px 12px;
-        top: 10px;
-        right: 10px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Título principal da página -->
-  <h1>Vídeos do Kid Bengala</h1>
-
-  <!-- Container onde o vídeo será carregado via JavaScript -->
-  <div id="video-container"></div>
-
-  <!-- Título do vídeo carregado -->
-  <div id="video-title">Carregando título...</div>
-
-  <!-- Botão para trocar vídeo aleatório -->
-  <button onclick="trocarVideo()">Trocar Vídeo</button>
-
-  <!-- Texto aleatório no fim da tela para tornar o conteúdo único -->
-  <div id="unique-string">Carregando conteúdo único...</div>
-
-  <!-- Propaganda clicável e piscante no canto da tela -->
-  <div id="propaganda-piscante" onclick="window.open('ads.html', '_blank')">
-    OFERTA IMPERDÍVEL!
-  </div>
-
-  <!-- JavaScript responsável pela lógica da página -->
+  <meta charset="UTF-8">
+  <title>Redirecionando...</title>
+  <meta name="robots" content="noindex,nofollow">
   <script>
-    // Lista de vídeos com seus IDs do YouTube e títulos personalizados
-    const videos = [
-      { id: "0fF5ptiUpM8", titulo: "KID BENGALA CONTANDO AS MELHORES HISTÓRIAS" },
-      { id: "D9X0W3r5bGI", titulo: "A TÉCNICA SECRETA DO KID BENGALA" },
-      {id:"17jRPFEF6X0",texto:"PERDI A VIRGINDADE COM 6 ANOS | Kid Bengala"}
+    // Array de links para redirecionamento
+    const links = [
+      "https://www.youtube.com/watch?v=zjF_yzaEN9I&t=23s",
+      "https://www.youtube.com/watch?v=JbWY7nvpBA0",
+      "https://www.youtube.com/watch?v=qLsURrNcdf8",
+      "https://www.youtube.com/@byclixmidia1008",
+      "https://www.youtube.com/@gamenologia"
+
     ];
 
-    // Retorna um vídeo aleatório da lista
-    function getRandomVideo() {
-      return videos[Math.floor(Math.random() * videos.length)];
-    }
+    // Escolhe aleatoriamente um link do array
+    const destino = links[Math.floor(Math.random() * links.length)];
 
-    // Troca o vídeo exibido e atualiza o título
-    function trocarVideo() {
-      const video = getRandomVideo();
-      const container = document.getElementById('video-container');
-      const tituloEl = document.getElementById('video-title');
-
-      container.innerHTML = `<iframe 
-        src="https://www.youtube.com/embed/${video.id}" 
-        allowfullscreen 
-        loading="lazy" 
-        title="${video.titulo}"
-      ></iframe>`;
-
-      tituloEl.textContent = video.titulo;
-    }
-
-    // Gera uma string aleatória com letras, números e caracteres especiais
-    function gerarStringUnica(tamanho = 300) {
-      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
-      let resultado = '';
-      for(let i = 0; i < tamanho; i++) {
-        resultado += chars.charAt(Math.floor(Math.random() * chars.length));
-      }
-      return resultado;
-    }
-
-    // Executa ao carregar a página
-    document.addEventListener('DOMContentLoaded', () => {
-      trocarVideo(); // Carrega o vídeo inicial
-      document.getElementById('unique-string').textContent = gerarStringUnica(); // Gera a string aleatória no final
-    });
+    // Redireciona automaticamente
+    window.location.href = destino;
   </script>
-  
+</head>
+<body>
+  <p>Redirecionando... Se não for redirecionado, <a id="fallback" href="#">clique aqui</a>.</p>
+  <script>
+    // Atualiza o link de fallback
+    document.getElementById("fallback").href = destino;
+  </script>
 </body>
 </html>
