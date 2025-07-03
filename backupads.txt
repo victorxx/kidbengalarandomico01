@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,7 +9,10 @@
     // Array de links para redirecionamento
     const links = [
       "https://www.youtube.com/watch?v=zjF_yzaEN9I&t=23s",
-      "https://www.youtube.com/watch?v=JbWY7nvpBA0"
+      "https://www.youtube.com/watch?v=JbWY7nvpBA0",
+      "https://www.youtube.com/watch?v=qLsURrNcdf8",
+      "https://www.youtube.com/@byclixmidia1008",
+      "https://www.youtube.com/@gamenologia"
 
     ];
 
