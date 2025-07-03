@@ -1,1 +1,30 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecionando...</title>
+  <meta name="robots" content="noindex,nofollow">
+  <script>
+    // Array de links para redirecionamento
+    const links = [
+      "https://www.youtube.com/watch?v=zjF_yzaEN9I&t=23s",
+      "https://www.youtube.com/watch?v=JbWY7nvpBA0"
+
+    ];
+
+    // Escolhe aleatoriamente um link do array
+    const destino = links[Math.floor(Math.random() * links.length)];
+
+    // Redireciona automaticamente
+    window.location.href = destino;
+  </script>
+</head>
+<body>
+  <p>Redirecionando... Se não for redirecionado, <a id="fallback" href="#">clique aqui</a>.</p>
+  <script>
+    // Atualiza o link de fallback
+    document.getElementById("fallback").href = destino;
+  </script>
+</body>
+</html>
